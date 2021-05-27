@@ -6,7 +6,7 @@
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
  * different template.
- * Template Name: Package Parent Destinations
+ * Template Name: Package Parent Bhutan
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package highhimalayantreks
@@ -18,7 +18,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'packageparentDestination' );
+				get_template_part( 'template-parts/content', 'packageparentBhutan' );
 
 			endwhile; // End of the loop.
 			?>

@@ -157,7 +157,7 @@
                          					
                          					<div class="nepalTrekkingCatagories">
                                             
-                                            <?php $current_pageid = get_the_ID(); //echo $current_pageid; ?>
+                                            <?php $current_pageid = get_the_ID();// echo $current_pageid; ?>
 
 											<?php if($current_pageid == "625") { ?> 
 												<!-- For nepal only -->
@@ -171,6 +171,90 @@
 													'meta_query'=> array(
 														array(
 															'key' => 'package_list_in_nepal',
+															'compare' => '=', 
+															'value' => true,
+														 )
+													  )
+                                                    ));?>
+                                                <?php if($sub_pages -> have_posts()){?>   
+                                                <?php while($sub_pages->have_posts()): $sub_pages->the_post();?>                                             
+                         						<div class="project-post ">
+                         							<div class="project-gal">
+                                                    <?php $thumbnail = get_the_post_thumbnail_url(); //echo $thumbnail; ?>
+                                                       <?php if ( has_post_thumbnail() ) { 
+														echo the_post_thumbnail('medium');
+														} else {?>
+															<img src="<?php echo get_template_directory_uri(); ?>/images/image-na-thumb.jpg" />
+														<?php } ?> 
+                                                        
+                         								<div class="hover-box">
+                         									<a class="zoom" href="<?php echo $thumbnail; ?>"><i class="fa fa-search-plus"></i></a>
+                         									<a class="link" href="<?php the_permalink(); ?>"><i class="fa fa-link"></i></a>
+                         								</div>
+                         							</div>
+                         							<div class="project-content">
+                         								<h2><?php the_title(); ?></h2>
+                         								
+                         							</div>
+                         						</div>
+                                                <?php endwhile; wp_reset_query();?>
+                                                <?php } else { ?>
+                                                <div class="no-posts">Packages have not been added.</div>
+                                            <?php } ?>
+
+											<?php } else if($current_pageid == "627") { ?> 
+												<!-- For Tibet only -->
+												<?php $sub_pages = new WP_Query(array(
+                                                    'post_type' => array('page'),                                                    
+                                                    'numberposts' => -1,
+                                                    'post_status' => 'publish',
+													'order'=>'DESC',
+													'meta_key' => 'package_list_in_tibet',
+													'meta_query'=> array(
+														array(
+															'key' => 'package_list_in_tibet',
+															'compare' => '=', 
+															'value' => true,
+														 )
+													  )
+                                                    ));?>
+                                                <?php if($sub_pages -> have_posts()){?>   
+                                                <?php while($sub_pages->have_posts()): $sub_pages->the_post();?>                                             
+                         						<div class="project-post ">
+                         							<div class="project-gal">
+                                                    <?php $thumbnail = get_the_post_thumbnail_url(); //echo $thumbnail; ?>
+                                                       <?php if ( has_post_thumbnail() ) { 
+														echo the_post_thumbnail('medium');
+														} else {?>
+															<img src="<?php echo get_template_directory_uri(); ?>/images/image-na-thumb.jpg" />
+														<?php } ?> 
+                                                        
+                         								<div class="hover-box">
+                         									<a class="zoom" href="<?php echo $thumbnail; ?>"><i class="fa fa-search-plus"></i></a>
+                         									<a class="link" href="<?php the_permalink(); ?>"><i class="fa fa-link"></i></a>
+                         								</div>
+                         							</div>
+                         							<div class="project-content">
+                         								<h2><?php the_title(); ?></h2>
+                         								
+                         							</div>
+                         						</div>
+                                                <?php endwhile; wp_reset_query();?>
+                                                <?php } else { ?>
+                                                <div class="no-posts">Packages have not been added.</div>
+                                            <?php } ?>
+
+											<?php } else if($current_pageid == "629") { ?> 
+												<!-- For Tibet only -->
+												<?php $sub_pages = new WP_Query(array(
+                                                    'post_type' => array('page'),                                                    
+                                                    'numberposts' => -1,
+                                                    'post_status' => 'publish',
+													'order'=>'DESC',
+													'meta_key' => 'package_list_in_bhutan',
+													'meta_query'=> array(
+														array(
+															'key' => 'package_list_in_bhutan',
 															'compare' => '=', 
 															'value' => true,
 														 )
