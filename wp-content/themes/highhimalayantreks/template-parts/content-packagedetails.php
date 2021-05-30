@@ -388,12 +388,12 @@ global $wp_query;
                                              <?php } ?>
                                         </ul>
                                    </div>
-
+                                   <!-- 
 
 
                                    <div class="category-widget widget">
-                                        <?php dynamic_sidebar('additional-activities-in-nepal'); ?>
-                                   </div>
+                                        <?php //dynamic_sidebar('additional-activities-in-nepal'); ?>
+                                   </div> -->
                               </div>
                          </div>
                     </div>

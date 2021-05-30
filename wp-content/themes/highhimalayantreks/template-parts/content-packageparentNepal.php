@@ -153,13 +153,13 @@
 								<div class="sidebar triggerAnimation animated" data-animate="slideInUp"> 
 								<?php if(wp_get_post_parent_id( get_the_ID())) {?>
 										<div class="category-widget widget">
-											<?php dynamic_sidebar( 'tibet-highlights' ); ?>
+											<?php dynamic_sidebar( 'nepal-highlights' ); ?>
 										</div>
 										<div class="category-widget widget">
-											<?php dynamic_sidebar( 'tibet-travel-information' ); ?>
+											<?php dynamic_sidebar( 'nepal-travel-information' ); ?>
 										</div>
 										<div class="category-widget widget">
-											<?php dynamic_sidebar( 'things-todo-in-tibet' ); ?>
+											<?php dynamic_sidebar( 'things-todo-in-nepal' ); ?>
 										</div>
 									<?php } ?>
 								</div>

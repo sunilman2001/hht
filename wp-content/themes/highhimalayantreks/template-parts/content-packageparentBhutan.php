@@ -150,21 +150,8 @@
 								</div>
 							</div>
 							<div class="col-md-3 sidebarStyle">
-								<?php
-									global $post;
-									// Display a page parent's slug
-									$post_data = get_post($post->post_parent);
-									$parent_slug = $post_data->post_name;								
-									//echo $parent_slug;
-
-									$current_slug = $post->post_name;
-									//$current_slug = ucfirst($current_slug);
-									//echo $current_slug;
-
-								?>
-								<?php $current_pageid = get_the_ID(); //echo $current_pageid; ?>
 								<div class="sidebar triggerAnimation animated" data-animate="slideInUp"> 
-								<?php if( $current_pageid == '1248'||'1250'||'1252'||'1254'||'1256') {?>
+								<?php if(wp_get_post_parent_id( get_the_ID())) {?>
 									<div class="category-widget widget">
 									<?php dynamic_sidebar( 'bhutan-highlights' ); ?>
 									</div>
@@ -174,7 +161,7 @@
 									<div class="category-widget widget">
 									<?php dynamic_sidebar( 'things-todo-in-bhutan' ); ?>
 									</div>
-									<?php } ?>
+								<?php } ?>
 								</div>
 								  
           					</div>
