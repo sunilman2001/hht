@@ -304,7 +304,7 @@ get_header(); ?>
 			================================================== -->
 		<div id="content">
 				<div class="title-section white">
-					<div class="container" data-animate="bounceIn">
+					<div class="container" data-animate="fadeIn">
 						<div class="col-md-1"><img src="<?php echo get_template_directory_uri(); ?>/images/mani_wheel.gif"></div>
 						<div class="col-md-11">
 							<h1><?php if((ot_get_option('welcome_title'))){ ?>
@@ -323,7 +323,7 @@ get_header(); ?>
 				================================================== -->
 			<div class="section-content services-section ">
 				<div class="title-section">
-					<div class="container triggerAnimation animated" data-animate="bounceIn">
+					<div class="container triggerAnimation animated" data-animate="fadeIn">
 						<h1><?php if((ot_get_option('adventures_main_title'))){ ?>
 									<?php  echo ot_get_option('adventures_main_title'); ?>
 								<?php } ?></h1>
@@ -412,12 +412,12 @@ get_header(); ?>
 				================================================== -->
 			<div class="section-content portfolio-section">
 				<div class="title-section">
-					<div class="container triggerAnimation animated" data-animate="bounceIn">
+					<div class="container triggerAnimation animated" data-animate="fadeIn">
 						<h1><?php if((ot_get_option('exclusive_offers_title'))){ ?><?php  echo ot_get_option('exclusive_offers_title'); ?><?php } ?></h1>
 						<p><?php if((ot_get_option('exclusive_offers_description'))){ ?><?php  echo ot_get_option('exclusive_offers_description'); ?><?php } ?></p>
 					</div>
 				</div>
-				<div class="portfolio-box triggerAnimation animated" data-animate="pulse">
+				<div class="portfolio-box triggerAnimation animated" data-animate="fadeIn">
 					<div id="owl-demo" class="owl-carousel owl-theme">
           
 <?php 
@@ -473,7 +473,7 @@ get_header(); ?>
 				================================================== -->
 			<div class="section-content features-section parallax" data-stellar-background-ratio="0">
 				<div class="container">
-					<div class="features-head triggerAnimation animated" data-animate="bounceIn">
+					<div class="features-head triggerAnimation animated" data-animate="fadeIn">
 					<div class="col-md-5 expertWrapper">
 						<h1><?php if((ot_get_option('meet_experts_title'))){ ?><?php  echo ot_get_option('meet_experts_title'); ?><?php } ?></h1>
 						<p><?php if((ot_get_option('meet_experts_description'))){ ?><?php  echo ot_get_option('meet_experts_description'); ?><?php } ?></p>
@@ -494,7 +494,7 @@ get_header(); ?>
 				================================================== -->
 			<div class="section-content client-section">
 				<div class="title-section">
-					<div class="container triggerAnimation animated" data-animate="bounceIn">
+					<div class="container triggerAnimation animated" data-animate="fadeIn">
 						<h1><?php if((ot_get_option('mission_vision_title'))){ ?><?php  echo ot_get_option('mission_vision_title'); ?><?php } ?></h1>
 						<?php if((ot_get_option('mission_vision_description'))){ ?><?php  echo ot_get_option('mission_vision_description'); ?><?php } ?>
 					</div>
@@ -621,7 +621,7 @@ get_header(); ?>
 				================================================== -->
 			<div class="section-content services-section">
 				<div class="title-section">
-					<div class="container triggerAnimation animated" data-animate="bounceIn">
+					<div class="container triggerAnimation animated" data-animate="fadeIn">
 						<h1><?php if((ot_get_option('why_us_main_title'))){ ?><?php  echo ot_get_option('why_us_main_title'); ?><?php } ?></h1>
 					</div>
 				</div>
@@ -695,7 +695,7 @@ get_header(); ?>
 				================================================== -->
 			<div class="single-project">
 				<div class="title-section white">
-					<div class="container triggerAnimation animated" data-animate="bounceIn">
+					<div class="container triggerAnimation animated" data-animate="fadeIn">
 						<h1><?php if((ot_get_option('special_tours_title'))){ ?><?php  echo ot_get_option('special_tours_title'); ?><?php } ?></h1>
 						
 					</div>

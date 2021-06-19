@@ -168,6 +168,7 @@
                                                     'numberposts' => -1,
                                                     'post_status' => 'publish',
 													'order'=>'DESC',
+													'orderby'   => 'meta_value',
 													'meta_key' => 'package_list_in_nepal',
 													'meta_query'=> array(
 														array(
@@ -210,6 +211,7 @@
                                                     'numberposts' => -1,
                                                     'post_status' => 'publish',
 													'order'=>'DESC',
+													'orderby'   => 'meta_value',
 													'meta_key' => 'package_list_in_tibet',
 													'meta_query'=> array(
 														array(
@@ -252,6 +254,7 @@
                                                     'numberposts' => -1,
                                                     'post_status' => 'publish',
 													'order'=>'DESC',
+													'orderby'   => 'meta_value',
 													'meta_key' => 'package_list_in_bhutan',
 													'meta_query'=> array(
 														array(
@@ -293,7 +296,8 @@
                                                     'post_parent' => $current_pageid,
                                                     'numberposts' => -1,
                                                     'post_status' => 'publish',
-                                                    'order'=>'DESC' 
+                                                    'order'=>'DESC',
+													'orderby'   => 'meta_value' 
                                                     ));?>
                                                 <?php if($sub_pages -> have_posts()){?>   
                                                 <?php while($sub_pages->have_posts()): $sub_pages->the_post();?>                                             

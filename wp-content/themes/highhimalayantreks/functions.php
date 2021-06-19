@@ -406,6 +406,12 @@ class UL_Class_Walker extends Walker_Nav_Menu {
   }
 }
 
+//removing link for the parent
+
+
+
+
+
 // Breadcrumbs
 function custom_breadcrumbs() {
        
