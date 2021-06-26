@@ -270,7 +270,7 @@
 					        </div>
 							
           					<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">s
+          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
 									
 									<?php if( $parent_page_type == "Nepal Trekking") {?>
 
