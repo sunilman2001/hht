@@ -368,8 +368,8 @@ require( trailingslashit( get_template_directory() ) . '/inc/option-tree/ot-load
 add_filter( 'ot_theme_mode', '__return_true' );
 
 // show/Hide OptionTree Page
-add_filter( 'ot_show_pages', '__return_false' );
-add_filter( 'ot_show_new_layout', '__return_false' );
+//add_filter( 'ot_show_pages', '__return_false' );
+//add_filter( 'ot_show_new_layout', '__return_false' );
 
 
 /* add excetpts to pages */

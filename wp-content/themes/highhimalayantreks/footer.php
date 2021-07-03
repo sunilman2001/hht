@@ -15,20 +15,20 @@
 <footer>
 	<div class="up-footer">
 		<div class="container">
-			<div class="row">
+			<div class="footCont">
 
-				<div class="col-sm-12 col-md-2">
+				<div class="footer-menu-1">
 					<?php dynamic_sidebar('footer-menu-1'); ?>
 				</div>
 
-				<div class="col-sm-12 col-md-3">
+				<div class="footer-menu-2">
 					<?php dynamic_sidebar('footer-menu-2'); ?>
 				</div>
 
-				<div class="col-sm-12 col-md-3">
+				<div class="footer-menu-3">
 					<?php dynamic_sidebar('footer-menu-3'); ?>
 				</div>
-				<div class="col-sm-12 col-md-3">
+				<div class="footer-menu-climbing-peaks">
 					<?php dynamic_sidebar('Footer-menu-climbing-peaks'); ?>
 					<!-- <div class="widget footer-widget flickr-widget">
 								<h1><?php if ((ot_get_option('footer_contact_title'))) { ?><?php echo ot_get_option('footer_contact_title'); ?><?php } ?></h1>
@@ -39,15 +39,26 @@
 								</div>
 							</div>							 -->
 				</div>
-				<div class="col-sm-12 col-md-1">
-					<div class="widget footer-widget flickr-widget">
-						<h1 style="font-size:12px;">Recommended by</h1>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/tripadvisor.jpg" alt="recommended" style="width:100px;" />
+				<div class="recAff">
+					<div class="rec">
+						<h1 >Recommended by</h1>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/tripadvisor.png" alt="recommended" />
 					</div>
 					<div class="affiliated">
-						<h1 style="font-size:12px;">Affiliated with</h1>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/associate.jpg" alt="associate" style="width:100px" />
-						<div class="clear"></div>
+						<h1 >Affiliated with</h1>
+						<ul class="affWith">
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img01.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img02.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img03.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img04.png" alt="associate"  /></li>						
+						</ul>
+						<ul class="affWith">
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img05.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img06.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img07.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img08.png" alt="associate"  /></li>
+						</ul>
+						
 
 					</div>
 				</div>

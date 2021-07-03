@@ -28,6 +28,9 @@ border:1px dashed #c70000;
     font-size: 1.5rem;
     
 }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline:none;
+}
 
 /* accordion */
 /* plus glyph for showing collapsible panels */
@@ -102,16 +105,38 @@ a.mainLogo img { width:160px; margin-top:10px; }
     line-height: 20px;
     text-align: left;
 	}
+
+
+.footCont {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+} 
+.rec img {
+    background-color:#F1F1F1;
+    border-radius:5px;
+    margin-bottom:1em;
+    padding:10px;
+    width:200px;
+}   
+.affWith {
+    display:flex;
+    flex-wrap:wrap;
+    padding:0;
+    gap:10px;
+
+}
 ul.footerList, .footer-widget ul.menu { margin:0; padding: 0; }
 ul.footerList li a, .footer-widget ul.menu li a { line-height: 25px; color:#dddddd; }
 ul.footerList li a:hover, .footer-widget ul.menu li a:hover{color:#e74c3c;}
 .site-info{color:#e74c3c;font-weight:600;}
 ul.footerContactList{margin:0; padding:0;}
+.list-menu .current_page_item a {
+    color: #e74c3c !important;
+  }
+
 
 ul.footerContactList li{line-height: 25px; color:#dddddd; }
-.affiliated { margin-top:10px; }
-.affiliated h1 { float:left; padding-right:15px; }
-.affiliated img{ position: relative; top:-8px; }
 .socialWrapper {margin:10px 0;}
 .lastRowFooter{ margin-top:40px; }
 .trekkingIcon, .peakClimbingIcon, .mountainingIcon, .tourIcon, .riverRaftingIcon, .paraglidingIcon 
@@ -138,7 +163,7 @@ ul.footerContactList li{line-height: 25px; color:#dddddd; }
 .sidebar ul.menu li.current_page_item { display: none;}
 .nepalTrekkingCatagories .project-post {display:inline-table; margin-bottom:30px;}
 .nepalTrekkingCatagories .project-post img {width:420px!important;}
-.nepalTrekkingCatagories .project-post { width:48%;}
+.nepalTrekkingCatagories .project-post { width:49%;}
 .sidebarStyle { border:1px solid #eee; padding-top:20px; background: #f5f5f5; margin:0; padding:0; }
 .midContent { border:1px solid #ccc; background-color: #f1f1f1; }
 
@@ -302,6 +327,8 @@ border-radius: 15px 0 0 15px;
 }
 
 /*Read More*/
+
+
 .fdTbl tr.moreList {
     display:none;
     padding: 10px;
@@ -390,15 +417,55 @@ border-radius: 15px 0 0 15px;
     margin:10px 5px;
 }
 
+.specialBtn, .search-btn{
+    color:#0b3f7a;
+    border: 1px solid #222222;
+    background-color:#FFF;
+    padding:8px;
+    font-size:12px;
+    font-weight:bold; 
+    text-transform: uppercase; 
+    float:right;
+    line-height: 1.4;
+}
+.specialBtn:hover, .search-btn:hover {
+    background: rgba(231, 76, 60, 1);
+    border: 1px solid #e74c3c;
+    color:#FFF;
+    text-decoration: none;
+    
+}
+
+.is-style-default img {
+    border: 8px solid rgb(108 146 195 / 83%);
+    -moz-box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+.footAlign {
+    display:flex;
+}
 
 
+.content__404--left .msg-text--not-found {
+    margin-bottom:2rem;
 
-
+}
+input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    width: 100%;
+    padding: 0.3125rem 0.5rem;
+    height: 50px;
+    border: 1px solid rgba(1, 38, 144, 0.2);
+    transition: border-color 0.35s;
+}
+.search-field {
+    margin-bottom:2rem;
+}
 
 /**************Mobile and ipad****************/
 
 /* sm  */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .navbar-nav.navbar-right{
         margin: 0;
         background: #3a3d41;
@@ -421,11 +488,32 @@ border-radius: 15px 0 0 15px;
     .destinationOthers__up a {
         margin: 5px 5px;
     }
+    .footCont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .recAff {
+        margin:20px 0;
+    }
+    .flexCol {
+        flex-direction: column;
+        margin-top:2em;
+    }
+    .top_section {
+        margin-left:0;
+    }
+    .blog-box .row .col-md-9 {
+        padding-left: 15px;
+    }
+    .nepalTrekkingCatagories .project-post {
+        width:100%;
+    }
    
 }
 
 
-@media(max-width:1000px)  {
+@media screen and (max-width:1000px)  {
     #container {
         padding-top: 172px;
     }
@@ -442,7 +530,7 @@ border-radius: 15px 0 0 15px;
         display:block !important;
       }
       .navbar-collapse {
-        margin-top: 170px;  
+        /* margin-top: 170px;   */
       }
 
     .navbar-collapse.collapse.in {
@@ -500,17 +588,23 @@ border-radius: 15px 0 0 15px;
         left: inherit;
         margin-left: 0.7rem;
     }
-    .up-footer {
+    .footCont {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
- 
-    .affiliated h1 { float:none;}
+    .recAff {
+        margin:20px 0;
+    }
+    
     .footer-widget { margin-top:2rem;}
     .nav-tabs > li {
         float:none;
         width:100%!important;
     }
-   
+    .blog-box .row .col-md-9 {
+        padding-right:0;
+    }
 }
 
 

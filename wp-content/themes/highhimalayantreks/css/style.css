@@ -137,7 +137,7 @@ Tags: HighHimalayanTreks, Trekking, Tours, Mountaineering
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   display: block;
-  color: #ffffff;
+  color: #ffffff!important;
   font-size: 11px;
   font-family: 'Open Sans', sans-serif;
   padding: 14px 20px;
@@ -148,6 +148,7 @@ Tags: HighHimalayanTreks, Trekking, Tours, Mountaineering
 }
 .navbar-nav li ul.drop-down li a:hover {
   background: #e74c3c;
+  color:#FFFFFF!important;
 }
 .navbar-nav li ul.drop-down li:hover ul.drop-down.level-1 {
   -webkit-transform: rotateY(0deg);

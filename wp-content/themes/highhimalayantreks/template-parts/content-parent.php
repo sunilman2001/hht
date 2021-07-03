@@ -207,9 +207,9 @@
 									<!-- Slider Logic Ends  -->
 									
 									<div class="post-content">
-										<div class="content-data contentPic">
-											<h2><?php the_title(); ?></h2>											
-										</div>
+										<!-- <div class="content-data contentPic">
+											<h2><?php //the_title(); ?></h2>											
+										</div> -->
 										<div class="detailsContent">
                                            <?php the_content(); ?>
 											</div>
@@ -311,7 +311,21 @@
 						
 									<div class="category-widget widget">
 										<?php dynamic_sidebar( 'things-todo-in-nepal' ); ?>
-									</div>											
+									</div>
+
+									<?php } else if($parent_page_type == "Company"){ ?>
+																
+									<div class="category-widget widget">
+									<h3>
+									Why choose us?
+									</h3>
+									<?php dynamic_sidebar( 'why-choose-us' ); ?>
+									</div>
+									<div class="category-widget widget">
+									  <?php dynamic_sidebar( 'things-todo-in-nepal' ); ?>
+									</div>
+									
+																				
 
 									<?php } else {?>
 										<?php 

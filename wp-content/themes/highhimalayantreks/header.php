@@ -106,7 +106,7 @@ $years_of_experience = ot_get_option('years_of_experience');
 									'after'           => '',
 									'link_before'     => '',
 									'link_after'      => '',
-									'items_wrap'      => '<ul id="navigate" class="nav navbar-nav navbar-right">%3$s</ul>',
+									'items_wrap'      => '<ul id="navigate" class="nav navbar-nav navbar-right list-menu">%3$s</ul>',
 									'depth'           => 0,
 									'walker'          => new UL_Class_Walker()
 								);

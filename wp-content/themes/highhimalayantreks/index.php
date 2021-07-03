@@ -722,11 +722,13 @@ get_header(); ?>
 								
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4" style="overflow:hidden;">
 							<div class="project-sidebar triggerAnimation animated" data-animate="slideInRight">								
 								<?php if((ot_get_option('special_tours_description'))){ ?><?php  echo ot_get_option('special_tours_description'); ?><?php } ?>
 							</div>
+							<a href="<?php if((ot_get_option('special_tours_link'))){ ?><?php  echo ot_get_option('special_tours_link'); ?><?php } ?>" class="specialBtn">View More</a>
 						</div>
+						
 					</div>					
 				</div>
 			</div>
