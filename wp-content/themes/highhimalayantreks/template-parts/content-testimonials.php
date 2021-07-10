@@ -27,7 +27,7 @@
           				<div class="row">
           					<div class="col-md-9">
 
-          						<div class="blog-post triggerAnimation animated" data-animate="slideInUp">
+          						<div class="blog-post triggerAnimation animated" data-animate="fadeIn">
 									<?php if ( has_post_thumbnail() ) { 
 										echo the_post_thumbnail('full');
 										} else {?>
@@ -49,7 +49,7 @@
 
 					        </div>
           					<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+          						<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
                                 	<div class="category-widget widget">
                                     <?php dynamic_sidebar( 'sidebar-menu-1' ); ?>  
 									</div>

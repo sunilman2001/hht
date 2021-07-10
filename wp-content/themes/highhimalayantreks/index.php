@@ -246,7 +246,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<!-- <div class="banner-thumbs">
-				<div class="container triggerAnimation animated" data-animate="slideInUp">
+				<div class="container triggerAnimation animated" data-animate="fadeIn">
 					
 					<ul class="slider-thumbnails">
 						<li class="active">

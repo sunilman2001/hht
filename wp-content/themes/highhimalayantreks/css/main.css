@@ -9,6 +9,7 @@ li, li a{list-style:none; text-decoration: none!important;}
     color:#fff;
     border-radius:2rem;
     padding:5px 10px;
+    margin-top:3rem;
 }
 .flexCol .experience span:nth-child(2){
 background:#fff;  
@@ -73,7 +74,7 @@ border:1px dashed #c70000;
  }
 /* accordion Ends */
 .top_section { margin-left:auto;}
-a.mainLogo img { width:160px; margin-top:10px; }
+a.mainLogo img { width:160px; margin-top:10px;mix-blend-mode: darken; }
 .welcome { text-align:left; }
 .desc { margin-top:20px; }
 .header-menu h2{display:none;}
@@ -137,7 +138,7 @@ ul.footerContactList{margin:0; padding:0;}
 
 
 ul.footerContactList li{line-height: 25px; color:#dddddd; }
-.socialWrapper {margin:10px 0;}
+.socialWrapper {padding:10px 0 0 0;}
 .lastRowFooter{ margin-top:40px; }
 .trekkingIcon, .peakClimbingIcon, .mountainingIcon, .tourIcon, .riverRaftingIcon, .paraglidingIcon 
 { background:url("../images/icons.png") no-repeat; width:45px; height:50px; }

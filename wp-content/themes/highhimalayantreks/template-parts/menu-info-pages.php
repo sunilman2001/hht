@@ -5,8 +5,8 @@
     $parent = $post->post_parent;                                     
     $grandparent_get = get_post($parent);                                     
     $grandparent = $grandparent_get->post_parent;                                     
-    ?>
-<?php echo get_the_title($parent); ?> Info
+    ?>    
+<?php echo get_the_title($parent); ?> Information
 </h3>
 
 <ul class="category-list">

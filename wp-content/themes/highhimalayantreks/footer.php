@@ -40,10 +40,6 @@
 							</div>							 -->
 				</div>
 				<div class="recAff">
-					<div class="rec">
-						<h1 >Recommended by</h1>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/tripadvisor.png" alt="recommended" />
-					</div>
 					<div class="affiliated">
 						<h1 >Affiliated with</h1>
 						<ul class="affWith">
@@ -58,8 +54,23 @@
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img07.png" alt="associate"  /></li>
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img08.png" alt="associate"  /></li>
 						</ul>
-						
-
+					</div>
+					<div class="socialWrapper">
+					<h1>Stay Connected</h1>
+						<ul class="social-icons" >
+						<?php if((ot_get_option('connect_youtube'))){ ?>
+							<li><a class="youtube" href="<?php  echo ot_get_option('connect_youtube'); ?>"><i class="fa fa-youtube"></i></a></li>
+						<?php }?>
+						<?php if((ot_get_option('connect_facebook'))){ ?>   
+							<li><a class="facebook" href="<?php  echo ot_get_option('connect_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
+							<?php }?>
+						<?php if((ot_get_option('connect_twitter'))){ ?>   
+							<li><a class="twitter" href="<?php  echo ot_get_option('connect_twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
+							<?php }?>
+						<?php if((ot_get_option('connect_instagram'))){ ?>   
+							<li><a class="instagram" href="<?php  echo ot_get_option('connect_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
+							<?php }?>
+						</ul>
 					</div>
 				</div>
 

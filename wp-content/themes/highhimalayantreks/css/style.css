@@ -2038,7 +2038,7 @@ a.go-top:hover {
 }
 .sidebar .widget h3 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0 0 16px;
@@ -3580,7 +3580,7 @@ ul.social-icons {
 }
 ul.social-icons li {
   display: inline-block;
-  margin-left: 8px;
+ 
 }
 ul.social-icons li a {
   display: inline-block;

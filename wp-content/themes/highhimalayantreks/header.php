@@ -71,22 +71,7 @@ $years_of_experience = ot_get_option('years_of_experience');
 						</div>
 						<div class="top_section">
 							<?php dynamic_sidebar( 'header-menu' ); ?>
-								<div class="socialWrapper">
-									<ul class="social-icons" >
-									<?php if((ot_get_option('connect_youtube'))){ ?>
-										<li><a class="youtube" href="<?php  echo ot_get_option('connect_youtube'); ?>"><i class="fa fa-youtube"></i></a></li>
-									<?php }?>
-									<?php if((ot_get_option('connect_facebook'))){ ?>   
-										<li><a class="facebook" href="<?php  echo ot_get_option('connect_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
-										<?php }?>
-									<?php if((ot_get_option('connect_twitter'))){ ?>   
-										<li><a class="twitter" href="<?php  echo ot_get_option('connect_twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
-										<?php }?>
-									<?php if((ot_get_option('connect_instagram'))){ ?>   
-										<li><a class="instagram" href="<?php  echo ot_get_option('connect_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
-										<?php }?>
-									</ul>
-								</div>
+								
 						</div>   
 					</div>
 					</div>

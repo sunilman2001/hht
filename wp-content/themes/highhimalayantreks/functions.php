@@ -231,18 +231,16 @@ function highhimalayantreks_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-    
 
-    register_sidebar( array(
-		'name'          => esc_html__( 'Additional Acttivities in Nepal', 'highhimalayantreks' ),
-		'id'            => 'additional-activities-in-nepal',
-		'description'   => esc_html__( 'Add Additional Acttivities in Nepal', 'highhimalayantreks' ),
+	register_sidebar( array(
+		'name'          => esc_html__( 'Facebook', 'highhimalayantreks' ),
+		'id'            => 'facebook',
+		'description'   => esc_html__( 'Add Facebook', 'highhimalayantreks' ),
 		'before_widget' => '<div id="%1$s" class="side-menu">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-    
 
     register_sidebar( array(
 		'name'          => esc_html__( 'Header Top Right Menu', 'highhimalayantreks' ),
@@ -265,7 +263,7 @@ function highhimalayantreks_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Menu Middle', 'highhimalayantreks' ),
+		'name'          => esc_html__( 'Footer Menu Middle ', 'highhimalayantreks' ),
 		'id'            => 'footer-menu-2',
 		'description'   => esc_html__( 'Add Footer Middle Menu', 'highhimalayantreks' ),
 		'before_widget' => '<div id="%1$s" class="widget footer-widget text-widget">',
@@ -368,8 +366,8 @@ require( trailingslashit( get_template_directory() ) . '/inc/option-tree/ot-load
 add_filter( 'ot_theme_mode', '__return_true' );
 
 // show/Hide OptionTree Page
-//add_filter( 'ot_show_pages', '__return_false' );
-//add_filter( 'ot_show_new_layout', '__return_false' );
+add_filter( 'ot_show_pages', '__return_false' );
+add_filter( 'ot_show_new_layout', '__return_false' );
 
 
 /* add excetpts to pages */

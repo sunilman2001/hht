@@ -270,7 +270,7 @@
 					        </div>
 							
           					<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+          						<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
 									
 									<?php if( $parent_page_type == "Nepal Trekking") {?>
 
@@ -323,6 +323,9 @@
 									</div>
 									<div class="category-widget widget">
 									  <?php dynamic_sidebar( 'things-todo-in-nepal' ); ?>
+									</div>
+									<div class="category-widget widget">
+									<?php dynamic_sidebar( 'facebook' ); ?>
 									</div>
 									
 																				

@@ -36,7 +36,7 @@
                            
                         
                        
-          						<div class="triggerAnimation animated" data-animate="slideInUp">
+          						<div class="triggerAnimation animated" data-animate="fadeIn">
 									<!-- Slider Logic Starts -->
 								
                                                       <?php
@@ -149,7 +149,7 @@
 								</div>
 								
                 			
-                                   <div class="triggerAnimation animated midContent" data-animate="bounceIn">
+                                   <div class="triggerAnimation animated midContent" data-animate="fadeIn">
 
                              
 
@@ -238,7 +238,7 @@
 
 					        </div>
           					<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+          						<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
                                         <div class="category-widget widget" style="margin-bottom:0;" >
                                              
                                                  <div class="widget-block"> 

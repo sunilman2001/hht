@@ -36,7 +36,7 @@
 				<?php } else { ?> 
 					<div class="col-md-12">
 				<?php } ?>	
-						<div class="blog-post triggerAnimation animated" data-animate="slideInUp">									
+						<div class="blog-post triggerAnimation animated" data-animate="fadeIn">									
 							<div class="post-content">										
 								<div class="detailsContent">
 									<?php the_content(); ?>
@@ -46,7 +46,7 @@
 					</div> 
 					<?php  if($parent_page_type == "Nepal Trekking") {?>
 					<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">									
+          						<div class="sidebar triggerAnimation animated" data-animate="fadeIn">									
 								 <?php 
 								 get_template_part( 'template-parts/menu', 'info-pages' );
 								 ?>

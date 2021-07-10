@@ -33,7 +33,7 @@
           				<div class="row">
           					<div class="col-md-9">
 						  
-        						<div class="blog-post triggerAnimation animated" data-animate="slideInUp">
+        						<div class="blog-post triggerAnimation animated" data-animate="fadeIn">
 								<!-- Slider Logic Starts -->
 								
 								<?php
@@ -150,7 +150,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 sidebarStyle">
-								<div class="sidebar triggerAnimation animated" data-animate="slideInUp"> 
+								<div class="sidebar triggerAnimation animated" data-animate="fadeIn"> 
 								<?php if(wp_get_post_parent_id( get_the_ID())) {?>
 									<div class="category-widget widget">
 									<?php dynamic_sidebar( 'bhutan-highlights' ); ?>

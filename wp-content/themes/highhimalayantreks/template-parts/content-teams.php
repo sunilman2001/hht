@@ -31,7 +31,7 @@
           			<div class="blog-box">
           				<div class="row">
           					<div class="col-md-12">	
-							  <div class="blog-post triggerAnimation animated" data-animate="slideInUp">
+							  <div class="blog-post triggerAnimation animated" data-animate="fadeIn">
 							  <div class="post-content">
 							  
 								  <div class="detailsContent">

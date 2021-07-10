@@ -33,7 +33,7 @@
           				<div class="row">
           					<div class="col-md-9">
 						  
-        						<div class="blog-post triggerAnimation animated" data-animate="slideInUp">
+        						<div class="blog-post triggerAnimation animated" data-animate="fadeIn">
 								<!-- Slider Logic Starts -->
 								
 								<?php
@@ -347,7 +347,7 @@
 							?>
 							<?php if($parent_slug == 'destinations'){  // for destinations sidebar ?>
 								
-								<div class="sidebar triggerAnimation animated" data-animate="slideInUp">                                       
+								<div class="sidebar triggerAnimation animated" data-animate="fadeIn">                                       
                                     <?php if($current_slug == 'nepal'){?>
 										<div class="category-widget widget">
 											<?php dynamic_sidebar( 'nepal-highlights' ); ?>
@@ -390,7 +390,7 @@
 
 							<?php }  else { // for other page sidebar ?>
 
-									<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+									<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
           							
 									  <div class="category-widget widget">
 									  <?php 

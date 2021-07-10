@@ -36,7 +36,7 @@
           				<div class="row">
           					<div class="col-md-9">
 
-          						<div class="blog-post triggerAnimation animated" data-animate="slideInUp">
+          						<div class="blog-post triggerAnimation animated" data-animate="fadeIn">
 							
 									<div class="post-content">
 										
@@ -47,7 +47,7 @@
 								</div>
 					        </div>
 							<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">									
+          						<div class="sidebar triggerAnimation animated" data-animate="fadeIn">									
 								  <div class="category-widget widget">
 <h3>Contact Information</h3>
 

@@ -198,7 +198,7 @@
 					        </div>
 							
           					<div class="col-md-3 sidebarStyle">
-          						<div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+          						<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
                                        <!-- <div class="category-widget widget">
                                                   <h3>Quick Inquiry Form</h3>
                                                   <?php //echo do_shortcode( '[contact-form-7 id="128" title="Quick Inquiry Form"]' ); ?>

@@ -34,12 +34,11 @@ global $wp_query;
           <div class="container">
                <div class="blog-box">
                     <div class="row">
-
                          <div class="col-md-9">
 
 
 
-                              <div class="triggerAnimation animated" data-animate="slideInUp">
+                              <div class="triggerAnimation animated" data-animate="fadeIn">
                                    <!-- Slider Logic Starts -->
 
                                    <?php
@@ -166,7 +165,7 @@ global $wp_query;
                                         </div>
                                    </div>
                               </div>
-                              <div class="triggerAnimation animated midContent" data-animate="bounceIn">
+                              <div class="triggerAnimation animated midContent" data-animate="fadeIn">
 
 
 
@@ -251,33 +250,30 @@ global $wp_query;
 
                          </div>
                          <div class="col-md-3 sidebarStyle">
-                              <div class="sidebar triggerAnimation animated" data-animate="slideInUp">
+                              <div class="sidebar triggerAnimation animated" data-animate="fadeIn">
                                    <div class="category-widget widget" style="margin-bottom:0;">
 
-                                        <div class="widget-block">
+                                        <div class="widget-block" style="display:none;">
 
                                              <?php
                                              $package_starts_from = get_field('package_starts_from');
                                              $min_package_price = get_field('min_package_price');
                                              $max_package_price = get_field('max_package_price');
                                              ?>
-                                             <div class="package-starts-from">
-                                                  <?php if (!empty($package_starts_from)) : ?>
-                                                       <div class="package-starts-from__label">
-                                                            <span class="package-starts-from__price">Price starts from: <?php echo $package_starts_from; ?></span>
-                                                       </div>
+                                                  <div class="package-starts-from">
+                                                       <?php if (!empty($package_starts_from)) : ?>
+                                                            <div class="package-starts-from__label">
+                                                                 <span class="package-starts-from__price">Price starts from: <?php echo $package_starts_from; ?></span>
+                                                            </div>
 
-                                                       <div class="packageBD triggerAnimation animated" data-animate="fadeIn">
-                                                            <p><span class="min_package_price"><?php echo $min_package_price; ?></span></p>
-                                                            <p><span class="max_package_price"><?php echo $max_package_price; ?></span></p>
-                                                       </div>
-                                             </div>
+                                                            <div class="packageBD triggerAnimation animated" data-animate="fadeIn">
+                                                                 <p><span class="min_package_price"><?php echo $min_package_price; ?></span></p>
+                                                                 <p><span class="max_package_price"><?php echo $max_package_price; ?></span></p>
+                                                            </div>
+                                                  </div>
 
-                                        <?php endif; ?>
+                                             <?php endif; ?>
                                         </div>
-
-
-
                                    </div>
 
 
@@ -388,12 +384,7 @@ global $wp_query;
                                              <?php } ?>
                                         </ul>
                                    </div>
-                                   <!-- 
-
-
-                                   <div class="category-widget widget">
-                                        <?php //dynamic_sidebar('additional-activities-in-nepal'); ?>
-                                   </div> -->
+                                   
                               </div>
                          </div>
                     </div>
@@ -402,5 +393,5 @@ global $wp_query;
           </div>
      </div>
 </div>
-</div>
+
 <!-- End content -->
