@@ -144,7 +144,7 @@
 											<h2><?php the_title(); ?></h2>											
 										</div> -->
 										<div class="detailsContent">
-                                           <?php the_content(); ?>
+                                         	
 											</div>
 									</div>
 								</div>

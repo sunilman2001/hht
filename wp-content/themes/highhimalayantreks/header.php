@@ -52,16 +52,16 @@ $years_of_experience = ot_get_option('years_of_experience');
 			<div class="navbar navbar-default navbar-fixed-top">			
 				<div class="container">
 				<div class="row">
-					<div class="col-sm-12 col-md-5">
+					<div class="col-sm-12 col-md-5 logoDiv">
 						<a href="<?php echo site_url(); ?>" class="mainLogo"><img alt="" src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>
-						<div class="navbar-header pull-right">
+						<!-- <div class="navbar-header pull-right">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
 							
-						</div>
+						</div> -->
 					</div>
 					<div class="col-sm-12 col-md-7">
 					<div class="flexCol">
@@ -69,8 +69,10 @@ $years_of_experience = ot_get_option('years_of_experience');
 						    <span>Over</span>
 						<span><?php  echo $number_of_years; ?></span><span><?php  echo $years_of_experience; ?></span>
 						</div>
+						
 						<div class="top_section">
-							<?php dynamic_sidebar( 'header-menu' ); ?>
+							<p><a href="mailto:sherpachangia@hotmail.com">sherpachangia@hotmail.com</a></p>
+							<p><a href="mailto:info@highhimalayatreks.com">info@highhimalayatreks.com</a></p>
 								
 						</div>   
 					</div>

@@ -333,22 +333,22 @@
 
 					        </div>
           					<div class="col-md-3 sidebarStyle">
-							<?php
-								global $post;
-								// Display a page parent's slug
-								$post_data = get_post($post->post_parent);
-								$parent_slug = $post_data->post_name;								
-								//echo $parent_slug;
+								<?php
+									global $post;
+									// Display a page parent's slug
+									$post_data = get_post($post->post_parent);
+									$parent_slug = $post_data->post_name;								
+									//echo $parent_slug;
 
-								$current_slug = $post->post_name;
-								//$current_slug = ucfirst($current_slug);
-								//echo $current_slug;
+									$current_slug = $post->post_name;
+									//$current_slug = ucfirst($current_slug);
+									//echo $current_slug;
 
-							?>
-							<?php if($parent_slug == 'destinations'){  // for destinations sidebar ?>
+								?>
+								<?php if($parent_slug == 'destinations'){  // for destinations sidebar ?>
 								
-								<div class="sidebar triggerAnimation animated" data-animate="fadeIn">                                       
-                                    <?php if($current_slug == 'nepal'){?>
+									<div class="sidebar triggerAnimation animated" data-animate="fadeIn">                                       
+                                   	 <?php if($current_slug == 'nepal'){?>
 										<div class="category-widget widget">
 											<?php dynamic_sidebar( 'nepal-highlights' ); ?>
 										</div>
@@ -388,22 +388,22 @@
 									<?php } ?> 
 									</div>
 
-							<?php }  else { // for other page sidebar ?>
+								<?php }  else { // for other page sidebar ?>
 
-									<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
-          							
-									  <div class="category-widget widget">
-									  <?php 
-								 get_template_part( 'template-parts/menu', 'info-pages' );
-								 ?>
-									</div>
+										<div class="sidebar triggerAnimation animated" data-animate="fadeIn">
+										
+										<div class="category-widget widget">
+										<?php 
+									get_template_part( 'template-parts/menu', 'info-pages' );
+									?>
+										</div>
 
-									<div class="category-widget widget">
-									  <?php dynamic_sidebar( 'things-todo-in-nepal' ); ?>
-									</div>
-									</div>
-								
-							<?php } ?>
+										<div class="category-widget widget">
+										<?php dynamic_sidebar( 'things-todo-in-nepal' ); ?>
+										</div>
+										</div>
+									
+								<?php } ?>
 
           						
 									

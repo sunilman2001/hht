@@ -39,45 +39,46 @@
 								</div>
 							</div>							 -->
 				</div>
-				<div class="recAff">
+				<div class="fb_footer">
+				<?php dynamic_sidebar( 'facebook' ); ?>
+				</div>
+			</div>
+			<div class="aff-social">
+			<div class="recAff">
 					<div class="affiliated">
 						<h1 >Affiliated with</h1>
 						<ul class="affWith">
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img01.png" alt="associate"  /></li>
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img02.png" alt="associate"  /></li>
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img03.png" alt="associate"  /></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img04.png" alt="associate"  /></li>						
-						</ul>
-						<ul class="affWith">
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img04.png" alt="associate"  /></li>
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img05.png" alt="associate"  /></li>
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img06.png" alt="associate"  /></li>
 						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img07.png" alt="associate"  /></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img08.png" alt="associate"  /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/images/affiliated/img08.png" alt="associate"  /></li>						
 						</ul>
+						
 					</div>
-					<div class="socialWrapper">
-					<h1>Stay Connected</h1>
-						<ul class="social-icons" >
-						<?php if((ot_get_option('connect_youtube'))){ ?>
-							<li><a class="youtube" href="<?php  echo ot_get_option('connect_youtube'); ?>"><i class="fa fa-youtube"></i></a></li>
-						<?php }?>
-						<?php if((ot_get_option('connect_facebook'))){ ?>   
-							<li><a class="facebook" href="<?php  echo ot_get_option('connect_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
-							<?php }?>
-						<?php if((ot_get_option('connect_twitter'))){ ?>   
-							<li><a class="twitter" href="<?php  echo ot_get_option('connect_twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
-							<?php }?>
-						<?php if((ot_get_option('connect_instagram'))){ ?>   
-							<li><a class="instagram" href="<?php  echo ot_get_option('connect_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
-							<?php }?>
-						</ul>
-					</div>
-				</div>
-
-
-
+					
 			</div>
-
+			<div class="socialWrapper">
+				<h1>Stay Connected</h1>
+				<ul class="social-icons" >
+				<?php if((ot_get_option('connect_youtube'))){ ?>
+					<li><a class="youtube" href="<?php  echo ot_get_option('connect_youtube'); ?>"><i class="fa fa-youtube"></i></a></li>
+				<?php }?>
+				<?php if((ot_get_option('connect_facebook'))){ ?>   
+					<li><a class="facebook" href="<?php  echo ot_get_option('connect_facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
+					<?php }?>
+				<?php if((ot_get_option('connect_twitter'))){ ?>   
+					<li><a class="twitter" href="<?php  echo ot_get_option('connect_twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
+					<?php }?>
+				<?php if((ot_get_option('connect_instagram'))){ ?>   
+					<li><a class="instagram" href="<?php  echo ot_get_option('connect_instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
+					<?php }?>
+				</ul>
+			</div>
+			</div>
 
 			<div class="footer-line">
 				<p>Copyright <?php echo date_i18n('Y') ?>. High Himalaya treks. All rights reserved.</p>
@@ -184,7 +185,7 @@
 						<?php endif; ?>
 					</table>
 				</div>
-				<div class="loadMore">
+					<div class="loadMore">
 						<a href="#" id="loadMore">Load More</a>
 					</div>
 			</div>
@@ -192,12 +193,68 @@
 			<!-- Modal footer -->
 			<div class="modal-footer">
 				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-			</div>
-
+			</div>	
 		</div>
 	</div>
 </div>
+<?php 
+		$heliCharterHeader = get_field('helicopter_charter_services_header');
+		$heliCharterContent = get_field('helicopter_charter_services_content');
+		$heliCharterImage = get_field('helicopter_charter_image');
 
+		?>
+<!-- Heli charter  -->
+<div class="modal fade" id="HCSModal" tabindex="-1" role="dialog" aria-labelledby="HCSModal" aria-hidden="true">
+		
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style="display:flex;">
+				<h3 class="modal-title"><?php echo $heliCharterHeader; ?></h3>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left:auto;">
+				<span aria-hidden="true" >&times;</span>
+				</button>
+			</div>
+			<div class="modal-body HCS-body">
+			<?php echo $heliCharterContent; ?>
+			<img src="<?php echo $heliCharterImage;?>" alt="">
+
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+			<!-- Heli Chater Ends -->
+
+			<!-- Trek safety & preparedness  -->
+<div class="modal fade" id="trekSModal" tabindex="-1" role="dialog" aria-labelledby="HCSModal" aria-hidden="true">
+	<?php 
+	$TrekSPTitle = get_field ('trek_safety_&_preparedness_title');
+	$TrekSPContent = get_field ('trek_safety_&_preparedness_content');
+	?>
+		
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="display:flex;">
+					<h3 class="modal-title"><?php echo $TrekSPTitle?></h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left:auto;">
+					<span aria-hidden="true" >&times;</span>
+					</button>
+				</div>
+				<div class="modal-body tSP-body">
+				<?php echo $TrekSPContent ?>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+				<!-- Trek safety & preparedness Ends -->
+	
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.migrate.js"></script>
@@ -241,7 +298,7 @@
 		revapi = jQuery('.tp-banner').revolution({
 			delay: 6000,
 			startwidth: 1170,
-			startheight: 738,
+			startheight: 700,
 			hideThumbs: 10,
 			fullWidth: "on",
 			forceFullWidth: "on",

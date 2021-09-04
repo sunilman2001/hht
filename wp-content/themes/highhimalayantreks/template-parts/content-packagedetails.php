@@ -384,6 +384,24 @@ global $wp_query;
                                              <?php } ?>
                                         </ul>
                                    </div>
+
+                                   <div class="category-widget widget" style="margin-bottom:0;">                                      
+                                        <div class="heliCharter">
+                                        <h3>Helicopter Charter Service</h3>
+                                        <a href="#" data-target="#HCSModal" data-toggle="modal">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/heli.png" />         
+                                        </a>
+                                   </div>
+                                   <div class="category-widget widget" style="margin-bottom:0;">                                      
+                                        <div class="trek-safety">
+                                        <h3>Trek safety & preparedness</h3>
+                                        <a href="#" data-target="#trekSModal" data-toggle="modal">
+                                        <h4>Click here to view details</h4>     
+                                        </a>
+                                   </div>
+                                       
+                                        
+                                   </div>
                                    
                               </div>
                          </div>

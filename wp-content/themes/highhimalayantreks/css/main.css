@@ -1,6 +1,6 @@
 
 /*--------------------------------------main---------------------------------------*/
-input, textarea{ border-radius: 5px; border: 1px solid #ccc; padding: 5px; outline: none;background: #eee;
+input, textarea{ border-radius: 5px; border: 1px solid #ccc; padding: 5px; outline: none;background: #fff;
 }
 li, li a{list-style:none; text-decoration: none!important;}
 .flexCol { display:flex; align-items: center;}
@@ -73,7 +73,15 @@ border:1px dashed #c70000;
     display: block;
  }
 /* accordion Ends */
-.top_section { margin-left:auto;}
+.top_section { margin-left:auto; margin-top:1rem;}
+.top_section h4 {
+    margin:0;
+}
+.top_section p {
+    margin:0;
+    font-size:14px;
+    font-weight:bold;
+}
 a.mainLogo img { width:160px; margin-top:10px;mix-blend-mode: darken; }
 .welcome { text-align:left; }
 .desc { margin-top:20px; }
@@ -110,7 +118,6 @@ a.mainLogo img { width:160px; margin-top:10px;mix-blend-mode: darken; }
 
 .footCont {
     display:flex;
-    flex-wrap:wrap;
     justify-content: space-between;
 } 
 .rec img {
@@ -138,8 +145,12 @@ ul.footerContactList{margin:0; padding:0;}
 
 
 ul.footerContactList li{line-height: 25px; color:#dddddd; }
-.socialWrapper {padding:10px 0 0 0;}
+.socialWrapper {padding:10px 0 0 20px;}
 .lastRowFooter{ margin-top:40px; }
+.aff-social{
+    display:flex;
+    align-items: baseline;
+}
 .trekkingIcon, .peakClimbingIcon, .mountainingIcon, .tourIcon, .riverRaftingIcon, .paraglidingIcon 
 { background:url("../images/icons.png") no-repeat; width:45px; height:50px; }
 .trekkingIcon { background-position:-16px -30px; color:#222222; }
@@ -155,10 +166,17 @@ ul.footerContactList li{line-height: 25px; color:#dddddd; }
 .riverRaftingIcon:hover{background-position:-383px -106px;}
 .paraglidingIcon:hover{background-position:-458px -109px;}
 .whyWrap {border:1px solid #a8a8a8; padding:15px;}
-.silhouette { background-image: url("../images/silhouette.png"); height:395px; background-size:cover; }
+.silhouette { 
+    background-image:url("../images/silhouette.png"), linear-gradient(180deg, #FFF 0%, rgb(235, 164, 93) 30%, rgb(238,119,0) 60%);
+    /* background-image:url("../images/silhouette.png"), linear-gradient(rgb(255, 255, 255), rgb(238,119,0) 200px);  */
+    height:213px; 
+    background-size:cover;
+    background-position: -25px 0px;
+ }
 .blog-postPic, .contentPic, .post-content > p, .post-content a { margin-left:0!important; }
 .post-content > p {padding:0!important;}
 .detailsContent { margin:10px 0 0 0; }
+.detailsContent p{ line-height: 24px;}
 .npTrek h1{ font-size: 18px; font-weight:bold; }
 .category-list, .sidebar .widget ul.menu { margin:0!important; padding:0 15px!important; }
 .sidebar ul.menu li.current_page_item { display: none;}
@@ -189,17 +207,18 @@ ul.footerContactList li{line-height: 25px; color:#dddddd; }
 .formbox p {
 margin: 0px !important;
 display: flex;
+flex-direction: column;
 padding-top: 7px;
 }
 .formbox .writespace {
-width: 30%;
+/* width: 30%; */
 background: #6b94ca;
 color: #fff;
 padding: 5px 10px;
-border-radius: 15px 0 0 15px;
+/* border-radius: 15px 0 0 15px; */
 }
 .formbox p span:nth-child(2){
-    width:70%;
+    /* width:70%; */
 
 }
 .formbox p input, .formbox p textarea {
@@ -277,10 +296,10 @@ border-radius: 15px 0 0 15px;
     max-height:500px;
 }  
 
-.fixedDeparture-form {
+/* .fixedDeparture-form {
     overflow:auto;
     height:650px;
-}
+} */
     
 .fdTbl { 
     width:99%;
@@ -462,11 +481,61 @@ input[type=email], input[type=number], input[type=password], input[type=search],
 .search-field {
     margin-bottom:2rem;
 }
+.heliCharter {
+    background:#6b94ca94;
+    text-align: center;
+    
+}
+.HCS-body {
+    display:flex;
+    flex-direction:column;
+
+}
+.tSP-body {
+display:flex;
+flex-direction:column;
+overflow: auto;
+height:500px;
+
+}
+.HCS-body img {
+    align-self: center;;
+}
+.trek-safety a {
+text-align: center;
+}
+.fb_footer  h3.widget-title {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 7px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
 
 /**************Mobile and ipad****************/
 
 /* sm  */
 @media screen and (max-width: 767px) {
+    body{
+        font-size:13px;
+    }
+    .blog-box .row {
+        margin-right:0;
+    }
+    .hht-breadcrumb{
+        margin-top:2.5em;
+    }
+    .sidebarStyle {
+        margin-left:15px;
+    }
+    .flexCol{
+        margin-bottom:1em;
+    }
+    .silhouette {
+    height: 49px;
+    background-position: -6px 0px;
+    }
     .navbar-nav.navbar-right{
         margin: 0;
         background: #3a3d41;
@@ -510,6 +579,7 @@ input[type=email], input[type=number], input[type=password], input[type=search],
     .nepalTrekkingCatagories .project-post {
         width:100%;
     }
+    
    
 }
 
@@ -607,6 +677,58 @@ input[type=email], input[type=number], input[type=password], input[type=search],
         padding-right:0;
     }
 }
+@media screen and (max-width:1366px){
+    .nav{
+        display:block;
+    }
+    
+    
+}
+@media screen and (width:1024px){
+    .silhouette {
+        height: 120px; 
+
+    }   
+    
+}
+@media screen and (max-width:1024px){
+    .aff-social{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .socialWrapper {
+        text-align: center;
+    }
+    .recAff {
+        text-align: center;
+    }
+    .affWith {
+        justify-content: center;
+    }
+    .logoDiv {
+        text-align: center;
+    }
+    .navbar {
+        padding-bottom:2rem;
+    }
+    .nav {
+        display:none;
+    }
+    .trekkingTabs{
+        display:block!important;
+    }
+
+}
+/* mobile-menu custom */
+.mob-menu-logo-holder {
+    display: none;
+}
+.mob-menu-header-holder {
+    background:none;
+}
+ 
+
+
 
 
 
