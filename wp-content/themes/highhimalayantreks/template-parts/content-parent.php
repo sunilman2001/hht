@@ -222,7 +222,12 @@
 								<div class="section-content portfolio-section"> 
 							
                          				<div class="portfolio-box">
-										 <?php if($parent_page_type == "Mountain Flight"){?>
+										 <?php if(
+											 $parent_page_type == "Ultra light Aircraft" ||
+											 $parent_page_type =="Paragliding" ||
+											 $parent_page_type =="Bungee Jumping" ||
+											 $parent_page_type == "Mountain Flight"
+										 ){?>
 											<div class="nepalTrekkingCatagories" style="display:none;"></div>
                          					
 										<?php } else {?>
@@ -333,7 +338,12 @@
 									</div> -->
 									<?php } else if($parent_page_type == "Mountain Flight" || 
 									$parent_page_type == "Mountain Biking Tour in Nepal" ||
-									$parent_page_type == "Nepal Motorbiking Tour"
+									$parent_page_type == "Nepal Motorbiking Tour" ||
+									$parent_page_type=="Jungle Safari" ||
+									$parent_page_type== "River Rafting in Nepal" ||
+									$parent_page_type == "Ultra light Aircraft" ||
+									$parent_page_type =="Paragliding" ||
+									$parent_page_type =="Bungee Jumping"
 									){ ?>
 										<div class="category-widget widget">
 											<?php dynamic_sidebar( 'nepal-highlights' ); ?>

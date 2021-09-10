@@ -677,20 +677,36 @@ text-align: center;
         padding-right:0;
     }
 }
+@media screen and (max-width:1440px) {
+    .silhouette {
+        height:184px;
+    }
+    }
 @media screen and (max-width:1366px){
     .nav{
         display:block;
     }
+    .silhouette {
+        height: 174px; 
+
+    }
     
     
 }
+@media screen and (max-width:1280px) {
+    .silhouette {
+        height: 162px;
+    }
+}
+
 @media screen and (width:1024px){
     .silhouette {
-        height: 120px; 
+        height: 132px; 
 
     }   
     
 }
+
 @media screen and (max-width:1024px){
     .aff-social{
         flex-direction: column;

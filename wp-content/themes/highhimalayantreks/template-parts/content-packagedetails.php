@@ -275,22 +275,42 @@ global $wp_query;
                                              <?php endif; ?>
                                         </div>
                                    </div>
-
-
                                    <div class="category-widget widget">
                                         <h3>Trip Profile</h3>
-                                        <div class="trip-fact">
-                                             <i class="fa fa-clock-o" aria-hidden="true"></i><strong>Trip Duration:</strong> <?php echo get_field('trip_duration'); ?><br>
-                                             <i class="fa fa-bookmark" aria-hidden="true"></i><strong>Trip Grade:</strong> <?php echo get_field('trek_grade'); ?><br>
-                                             <i class="fa fa-signal" aria-hidden="true"></i><strong>Highest Alt:</strong> <?php echo get_field('highest_alt'); ?><br>
-                                             <i class="fa fa-home" aria-hidden="true"></i><strong>Trek Style:</strong> <?php echo get_field('trek_style'); ?><br>
-                                             <i class="fa fa-bed" aria-hidden="true"></i><strong>Accommodation:</strong> <?php echo get_field('accommodation'); ?><br>
-                                             <i class="fa fa-pagelines" aria-hidden="true"></i><strong>Best Season:</strong> <?php echo get_field('best_season'); ?><br>
-                                             <i class="fa fa-users" aria-hidden="true"></i><strong>Group Size:</strong> <?php echo get_field('group_size'); ?><br>
-                                             <i class="fa fa-plane fan" aria-hidden="true"></i><strong>/<i class="fa fa-bus" aria-hidden="true"></i>Mode of Travel:</strong> <?php echo get_field('mode_of_travel'); ?><br>
-                                             <i class="fa fa-map-marker" aria-hidden="true"></i><strong>Start/End:</strong> <?php echo get_field('start_end'); ?>
-                                        </div>
+                                        <?php if($post->post_parent == '2236' || $post->post_parent == '2239'){?>
+                                        
+                                             <div class="trip-fact">
+                                                  <i class="fa fa-clock-o" aria-hidden="true"></i><strong>Trip Duration:</strong> <?php echo get_field('trip_duration'); ?><br>
+                                                  <i class="fa fa-bookmark" aria-hidden="true"></i><strong>Trip Grade:</strong> <?php echo get_field('trek_grade'); ?><br>
+                                                  <i class="fa fa-signal" aria-hidden="true"></i><strong>Highest Alt:</strong> <?php echo get_field('highest_alt'); ?><br>
+                                                  <i class="fa fa-home" aria-hidden="true"></i><strong>Trip Style:</strong> <?php echo get_field('trek_style'); ?><br>
+                                                  <i class="fa fa-bed" aria-hidden="true"></i><strong>Accommodation:</strong> <?php echo get_field('accommodation'); ?><br>
+                                                  <i class="fa fa-pagelines" aria-hidden="true"></i><strong>Best Season:</strong> <?php echo get_field('best_season'); ?><br>
+                                                  <i class="fa fa-users" aria-hidden="true"></i><strong>Group Size:</strong> <?php echo get_field('group_size'); ?><br>
+                                                  <i class="fa fa-plane fan" aria-hidden="true"></i><strong>/<i class="fa fa-bus" aria-hidden="true"></i>Mode of Travel:</strong> <?php echo get_field('mode_of_travel'); ?><br>
+                                                  <i class="fa fa-map-marker" aria-hidden="true"></i><strong>Start/End:</strong> <?php echo get_field('start_end'); ?>
+                                             </div>
+                                             
+                                        <?php } else { ?>
+                                       
+                                             <div class="trip-fact">
+                                                  <i class="fa fa-clock-o" aria-hidden="true"></i><strong>Trip Duration:</strong> <?php echo get_field('trip_duration'); ?><br>
+                                                  <i class="fa fa-bookmark" aria-hidden="true"></i><strong>Trip Grade:</strong> <?php echo get_field('trek_grade'); ?><br>
+                                                  <i class="fa fa-signal" aria-hidden="true"></i><strong>Highest Alt:</strong> <?php echo get_field('highest_alt'); ?><br>
+                                                  <i class="fa fa-home" aria-hidden="true"></i><strong>Trek Style:</strong> <?php echo get_field('trek_style'); ?><br>
+                                                  <i class="fa fa-bed" aria-hidden="true"></i><strong>Accommodation:</strong> <?php echo get_field('accommodation'); ?><br>
+                                                  <i class="fa fa-pagelines" aria-hidden="true"></i><strong>Best Season:</strong> <?php echo get_field('best_season'); ?><br>
+                                                  <i class="fa fa-users" aria-hidden="true"></i><strong>Group Size:</strong> <?php echo get_field('group_size'); ?><br>
+                                                  <i class="fa fa-plane fan" aria-hidden="true"></i><strong>/<i class="fa fa-bus" aria-hidden="true"></i>Mode of Travel:</strong> <?php echo get_field('mode_of_travel'); ?><br>
+                                                  <i class="fa fa-map-marker" aria-hidden="true"></i><strong>Start/End:</strong> <?php echo get_field('start_end'); ?>
+                                             </div>
+                                        <?php } ?>
                                    </div>
+
+                                        
+
+
+                                   
 
                                    <div class="category-widget widget">
 
@@ -384,21 +404,35 @@ global $wp_query;
                                              <?php } ?>
                                         </ul>
                                    </div>
+                                   <?php if(
+                                        $post->post_parent =='627' || 
+                                        $post->post_parent =='629' || 
+                                        $post->post_parent =='2236' || 
+                                        $post->post_parent =='2239'){ ?>
+                                   <div class="extra-widget" style="display:none;"></div>  
 
-                                   <div class="category-widget widget" style="margin-bottom:0;">                                      
-                                        <div class="heliCharter">
-                                        <h3>Helicopter Charter Service</h3>
-                                        <a href="#" data-target="#HCSModal" data-toggle="modal">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/heli.png" />         
-                                        </a>
-                                   </div>
-                                   <div class="category-widget widget" style="margin-bottom:0;">                                      
-                                        <div class="trek-safety">
-                                        <h3>Trek safety & preparedness</h3>
-                                        <a href="#" data-target="#trekSModal" data-toggle="modal">
-                                        <h4>Click here to view details</h4>     
-                                        </a>
-                                   </div>
+                                   <?php } else { ?>
+
+                                   <div class="extra-widget">
+                                        <div class="category-widget widget" style="margin-bottom:0;">                                      
+                                             <div class="heliCharter">
+                                             <h3>Helicopter Charter Service</h3>
+                                             <a href="#" data-target="#HCSModal" data-toggle="modal">
+                                             <img src="<?php echo get_template_directory_uri(); ?>/images/heli.png" />         
+                                             </a>
+                                        </div>
+                                        <div class="category-widget widget" style="margin-bottom:0;">                                      
+                                             <div class="trek-safety">
+                                             <h3>Trek safety & preparedness</h3>
+                                             <a href="#" data-target="#trekSModal" data-toggle="modal">
+                                             <h4>Click here to view details</h4>     
+                                             </a>
+                                        </div>
+                                   </div> 
+                                             
+                                  <?php } ?>
+                                   
+                                   
                                        
                                         
                                    </div>
